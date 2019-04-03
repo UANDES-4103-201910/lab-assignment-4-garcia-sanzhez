@@ -1,6 +1,4 @@
 class EventVenue < ApplicationRecord
-	#validates :name, lenght: {minimum: 20}
-	#validates :capacity, numericality: {greater_than: 0}
-	
-
+	validates :name,presence: true, lenght: {minimum: 20}
+	validates :capacity, presence: true, numericality: {greater_than: 0}
 end
