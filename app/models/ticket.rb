@@ -13,8 +13,11 @@ class Ticket < ApplicationRecord
   		end
 
   	def bought_after_start_date
+  		used_ticket = TicketType.find(ticket_type.id)
   		used_order = Order.find(ticket_order.id)
-  		used_
+  		used_event = Event.find(used_ticket.event_id)
+  		
+  		if 
 
 
   	end
